@@ -68,3 +68,27 @@ print(dotProd.product())
 
 dotProd = DotProduct([-4,-7],[6,8])
 print(dotProd.product())
+
+
+
+####### Question 3 ########
+
+class RemovePunctuation:
+
+    def __init__(self, strings):
+        self._strings = strings
+
+    def remove_punctuations(self):
+        result = ''
+        for i in self._strings:
+            if i.isalpha() or i == ' ':
+                result+=i
+
+        return result
+    
+
+###### Test cases
+
+# Test case 1
+newString = RemovePunctuation("Let's try, Mike.")
+print(newString.remove_punctuations())
