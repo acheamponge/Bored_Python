@@ -92,3 +92,28 @@ class RemovePunctuation:
 # Test case 1
 newString = RemovePunctuation("Let's try, Mike.")
 print(newString.remove_punctuations())
+
+
+
+####### Question 4 ########
+from itertools import permutations
+class AllPossibleStrings:
+    def __init__(self,strings):
+        self._strings = strings
+
+
+    def permutation(self):
+        results = set()
+        for i in permutations(self._strings, len(self._strings)):
+            results.add(''.join(i))
+
+        return results
+    
+
+###### Test cases
+
+# Test case 1
+permStrings = AllPossibleStrings(['c','a','t','d','o','g'])
+print(permStrings.permutation())
+
+
