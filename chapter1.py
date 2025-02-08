@@ -12,6 +12,19 @@ class OddProduct:
                 return (i,j) 
             
 
-productOdd = OddProduct([1,2,3,4,5,6,8])
 
+###### Test cases  #######
+
+# Test 1
+productOdd = OddProduct([1,2,3,4,5,6,8])
 print(productOdd.findPairs())
+
+
+# Test 2
+productOdd = OddProduct([2,2,2,2,2,2,2])
+print(productOdd.findPairs())
+
+# Test 3
+productOdd = OddProduct([1,2,-3,-4])
+print(productOdd.findPairs())
+
